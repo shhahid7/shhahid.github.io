@@ -16,7 +16,6 @@
 
 </section>
 </div>
-<script src="/assets/js/rocket-loader.min.js" data-cf-settings="daa0af620609e3bb71f2d28e-|49" defer=""></script></body>
 </html>
 
    
