@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+	<addon id="plugin.video.jiotv" name="JioTV" version="2.3.2" provider-name="shhahid">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.codequick" version="1.0.2"/>
+        <import addon="script.module.inputstreamhelper" version="0.5.10"/>
+        <import addon="inputstream.adaptive" minversion="2.6.6"/>
+        <import addon="script.module.m3u8" version="0.5.4"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Stream Live Indian Channels From JioTV on Kodi</summary>
+        <description lang="en_GB">Enjoy Live TV experience in Kodi.</description>
+        <language>en</language>
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum>https://botallen.com/discord</forum>
+        <website>https://shhahid.github.io</website>
+        <email>kodi@botallen.com</email>
+        <source>https://github.com/shhahid7/plugin.video.jiotv</source>
+        <news>
+[- 2.3.2 -]
+[added] New Epg setup	
+[- 2.3.1 -]
+[added] implement caching
+[- 2.3.0 -]
+[added] more extra channels
+[added] inputstream adaptive as a dependency
+
+[fixed] All major issues related to playback almost solved
+[added] Categorized by Language
+[added] Filter channels by specific language in genre. (from settings)
+            </news>
+            <disclaimer>This plugin is not officially commissioned/supported by Jio. The trademark "Jio" is registered by "Reliance Corporate IT Park Limited (RCITPL)"</disclaimer>
+            <assets>
+                <icon>resources/icon.png</icon>
+                <fanart>resources/fanart.png</fanart>
+                <screenshot>resources/icon.png</screenshot>
+                <screenshot>resources/icon.png</screenshot>
+                <screenshot>resources/icon.png</screenshot>
+            </assets>
+            <reuselanguageinvoker>true</reuselanguageinvoker>
+        </extension>
+    </addon>
+	<addon id="repository.shhahid" name="shhahid Addon Repository" version="2.0.0" provider-name="Tob Alan">
+		<extension point="xbmc.addon.repository" name="shhahid Addons Repository">
+			<dir minversion="19.0">
+				<info compressed="false">https://raw.githubusercontent.com/shhahid7/shhahid.github.io/main/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/shhahid7/shhahid.github.io/main/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/shhahid7/shhahid.github.io/main/Zips</datadir>
+			</dir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>shhahid Repository for Kodi</summary>
+			<description>A Repository for Streaming Add-ons of Indian OTT Providers</description>
+			<platform>all</platform>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+                <clearlogo>icon.png</clearlogo>
+            </assets>
+		</extension>
+	</addon>
+</addons>
